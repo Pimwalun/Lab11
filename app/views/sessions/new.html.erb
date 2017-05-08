@@ -1,0 +1,20 @@
+<% provide(:title, 'Log in') %>
+
+<div id="head" style="border: 1px solid black; height: 20px">
+  Invalid email/password combination.
+</div>
+
+<h1>Log in</h1>
+<div class="center">
+  <div style="display: inline-block; text-align: left">
+  <br>Email
+  <br><input></input>
+  <br>
+  <br>Password
+  <br><input></input>
+  <br>
+  <br><%= link_to "Log in", login_path, class: "btn btn-lg btn-primary" %>
+  <br>
+  <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+  </div>
+</div>
